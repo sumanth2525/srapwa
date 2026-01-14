@@ -1,0 +1,117 @@
+import { Task, Note, Transaction, User } from '../types';
+
+export const mockUser: User = {
+  id: 'mock-user-1',
+  email: 'user@example.com',
+  name: 'John Doe',
+  createdAt: new Date('2024-01-01'),
+};
+
+export const mockTasks: Task[] = [
+  {
+    id: 'task-1',
+    userId: 'mock-user-1',
+    title: 'Complete project proposal',
+    description: 'Write and submit the Q1 project proposal',
+    completed: false,
+    priority: 'high',
+    dueDate: new Date('2024-12-31'),
+    createdAt: new Date('2024-01-15'),
+    updatedAt: new Date('2024-01-15'),
+    category: 'Work',
+  },
+  {
+    id: 'task-2',
+    userId: 'mock-user-1',
+    title: 'Buy groceries',
+    description: 'Get milk, bread, and vegetables',
+    completed: true,
+    priority: 'medium',
+    dueDate: new Date('2024-01-20'),
+    createdAt: new Date('2024-01-18'),
+    updatedAt: new Date('2024-01-19'),
+    category: 'Personal',
+  },
+  {
+    id: 'task-3',
+    userId: 'mock-user-1',
+    title: 'Schedule dentist appointment',
+    completed: false,
+    priority: 'low',
+    createdAt: new Date('2024-01-20'),
+    updatedAt: new Date('2024-01-20'),
+    category: 'Health',
+  },
+];
+
+export const mockNotes: Note[] = [
+  {
+    id: 'note-1',
+    userId: 'mock-user-1',
+    title: 'Meeting Notes - Q1 Planning',
+    content: 'Discussed budget allocation and timeline for Q1 projects. Need to finalize team assignments by next week.',
+    category: 'Work',
+    color: '#3b82f6',
+    createdAt: new Date('2024-01-15'),
+    updatedAt: new Date('2024-01-15'),
+    tags: ['meeting', 'planning', 'q1'],
+  },
+  {
+    id: 'note-2',
+    userId: 'mock-user-1',
+    title: 'Recipe Ideas',
+    content: 'Pasta carbonara recipe:\n- 200g spaghetti\n- 100g pancetta\n- 2 eggs\n- Parmesan cheese\n- Black pepper',
+    category: 'Personal',
+    color: '#10b981',
+    createdAt: new Date('2024-01-18'),
+    updatedAt: new Date('2024-01-18'),
+    tags: ['cooking', 'recipe'],
+  },
+];
+
+export const mockTransactions: Transaction[] = [
+  {
+    id: 'transaction-1',
+    userId: 'mock-user-1',
+    amount: 5000,
+    description: 'Monthly Salary',
+    category: 'Salary',
+    type: 'income',
+    date: new Date('2024-01-01'),
+    createdAt: new Date('2024-01-01'),
+    updatedAt: new Date('2024-01-01'),
+  },
+  {
+    id: 'transaction-2',
+    userId: 'mock-user-1',
+    amount: 1200,
+    description: 'Rent Payment',
+    category: 'Bills',
+    type: 'expense',
+    date: new Date('2024-01-01'),
+    createdAt: new Date('2024-01-01'),
+    updatedAt: new Date('2024-01-01'),
+  },
+  {
+    id: 'transaction-3',
+    userId: 'mock-user-1',
+    amount: 150,
+    description: 'Grocery Shopping',
+    category: 'Food',
+    type: 'expense',
+    date: new Date('2024-01-15'),
+    createdAt: new Date('2024-01-15'),
+    updatedAt: new Date('2024-01-15'),
+  },
+  {
+    id: 'transaction-4',
+    userId: 'mock-user-1',
+    amount: 300,
+    description: 'Freelance Project',
+    category: 'Freelance',
+    type: 'income',
+    date: new Date('2024-01-20'),
+    createdAt: new Date('2024-01-20'),
+    updatedAt: new Date('2024-01-20'),
+  },
+];
