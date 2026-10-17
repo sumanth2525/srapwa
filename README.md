@@ -1,6 +1,14 @@
-# Rork Personal Productivity & Finance App
+# Productivity & Finance
 
-A comprehensive personal productivity and finance management app built with Expo SDK 53, React Native, TypeScript, and Firebase. Features a responsive web PWA with offline capabilities.
+A cross-platform application project for organizing tasks, notes, income, and expenses.
+
+**Engineering focus:** shared web/mobile interfaces, typed application structure, Firebase integration, and data portability.
+
+[Project portfolio](https://github.com/sumanth2525/MainAll) · [Package and scripts](package.json)
+
+> Development project. The feature list below describes intended and documented capabilities; production readiness and cross-platform behavior require validation.
+
+A comprehensive personal productivity and finance management app built with Expo SDK 51, React Native, TypeScript, and Firebase. Features a responsive web PWA with offline capabilities.
 
 ## Features
 
@@ -52,8 +60,8 @@ A comprehensive personal productivity and finance management app built with Expo
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd rork-pwa
+   git clone https://github.com/sumanth2525/srapwa.git
+   cd srapwa
    ```
 
 2. **Install dependencies**
@@ -247,4 +255,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Support
 
-For support, email support@rork.app or create an issue in the repository.
+For questions or reproducible problems, create an issue in this repository.
